@@ -16,8 +16,14 @@ module.exports.registerPlayerEvents = (player) => {
         var thumbnail = data.high.url;
         const showTrack = {
             color: 0x303136,
-            title: 'Started playing',
-            description: `${track.title}`,
+            title: `${track.title}`,
+            url: url,
+            fields: [
+                {
+                    name: 'Track duration',
+                    value: `${track.duration}`,
+                },
+            ],
             image: {
                 url: thumbnail
             },
