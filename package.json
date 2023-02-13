@@ -302,8 +302,6 @@
     "spdx-exceptions": "^2.3.0",
     "spdx-expression-parse": "^3.0.1",
     "spdx-license-ids": "^3.0.10",
-    "spotify-uri": "^2.2.0",
-    "spotify-url-info": "^2.2.3",
     "sprintf-js": "^1.0.3",
     "statuses": "^2.0.1",
     "string-width": "^2.1.1",
