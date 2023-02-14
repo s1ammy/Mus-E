@@ -1,5 +1,5 @@
 ### How to run bot?
 Requires [FFMPEG](https://ffmpeg.org/)
-- Create .env file and fill it.
-- Install all dependencies with `npm i`.
+- Rename `.env.example` file to `.env` and fill it.
+- Install all dependencies with `npm i` or `yarn`.
 - Now you can run the bot with `node .`.
