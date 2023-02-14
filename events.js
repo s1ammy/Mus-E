@@ -8,8 +8,6 @@ module.exports.registerPlayerEvents = (player) => {
     });
 
     player.on('trackStart', (queue, track) => {
-        // queue.metadata.send(`Started playing: **${track.title}** in **${queue.connection.channel.name}**!\n${track.url}`);
-        // queue.metadata.send(`Started playing: ${track.url}`);
         var youtubeThumbnail = require('youtube-thumbnail');
         var url = `${track.url}`;
         var data = youtubeThumbnail(url);
