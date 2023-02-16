@@ -8,22 +8,13 @@ module.exports.registerPlayerEvents = (player) => {
     });
 
     player.on('trackStart', (queue, track) => {
-        var youtubeThumbnail = require('youtube-thumbnail');
-        var url = `${track.url}`;
-        var data = youtubeThumbnail(url);
-        var thumbnail = data.high.url;
         const showTrack = {
             color: 0x303136,
             title: `${track.title}`,
-            url: url,
-            fields: [
-                {
-                    name: 'Track duration',
-                    value: `${track.duration}`,
-                },
-            ],
+            url: track.url,
+            description: `Track duration: **${track.duration}**`,
             image: {
-                url: thumbnail
+                url: track.thumbnail
             },
         };
         queue.metadata.send({ embeds: [showTrack] });
