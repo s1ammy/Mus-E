@@ -19,6 +19,5 @@ module.exports = class extends SlashCommand {
         if (!queue || !queue.playing) return void ctx.sendFollowUp({ content: 'No music is being played!' });
         queue.destroy();
         return void ctx.sendFollowUp({ content: 'Stopped the player!' });
-
     }
 };

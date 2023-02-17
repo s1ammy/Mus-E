@@ -43,7 +43,7 @@ module.exports = class extends SlashCommand {
                             ? `\n...${queue.tracks.length - pageEnd} more track(s)`
                             : ''
                     }`,
-                    color: 0xff0000,
+                    color: 0x2b2d30,
                     fields: [{ name: 'Now Playing', value: `🎶 | **${currentTrack.title}** ([link](${currentTrack.url}))` }]
                 }
             ]

@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 const path = require('path');
 const { SlashCreator, GatewayServer } = require('slash-create');
-const { Client, GatewayIntentBits } = require('discord.js');
+const { Client} = require('discord.js');
 const { Player } = require('discord-player');
 const { registerPlayerEvents } = require('./events');
 
@@ -9,8 +9,8 @@ dotenv.config();
 
 const client = new Client({
     intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildVoiceStates
+        'GUILDS',
+        'GUILD_VOICE_STATES'
     ]
 });
 

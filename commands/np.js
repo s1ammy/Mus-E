@@ -32,7 +32,7 @@ module.exports = class extends SlashCommand {
                             value: progress.replace(/ 0:00/g, ' ◉ LIVE')
                         }
                     ],
-                    color: 0xffffff
+                    color: 0x2b2d30
                 }
             ]
         });
