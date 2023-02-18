@@ -24,6 +24,7 @@ const creator = new SlashCreator({
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setActivity('music');
 });
 
 creator
