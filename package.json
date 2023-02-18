@@ -1,10 +1,10 @@
 {
-  "name": "discord-music-bot",
+  "name": "Mus-E",
   "version": "1.0.0",
-  "description": "The perfect music bot for your Discord server! 🤘",
+  "description": "Minimalistic discord music bot",
   "main": "index.js",
-  "repository": "https://github.com/Androz2091/discord-music-bot",
-  "author": "Androz2091 <androz2091@gmail.com>",
+  "repository": "https://github.com/s1ammy/Mus-E",
+  "author": "s1ammy",
   "license": "MIT",
   "scripts": {
     "start": "node index.js"
