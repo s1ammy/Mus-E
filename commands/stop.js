@@ -18,6 +18,6 @@ module.exports = class extends SlashCommand {
         const queue = client.player.getQueue(ctx.guildID);
         if (!queue || !queue.playing) return void ctx.sendFollowUp({ content: 'No music is being played!' });
         queue.destroy();
-        return void ctx.sendFollowUp({ content: 'Stopped the player!' });
+        return void ctx.sendFollowUp({ content: 'Stopped playing' });
     }
 };

@@ -32,7 +32,7 @@ module.exports.registerPlayerEvents = (player) => {
         queue.metadata.send('Nobody is in the voice channel, leaving...');
     });
 
-    player.on('queueEnd', (queue) => {
-        queue.metadata.send('Stopped playing');
-    });
+    // player.on('queueEnd', (queue) => {
+    //     queue.metadata.send('Stopped playing');
+    // });
 };
