@@ -12,7 +12,7 @@ module.exports.registerPlayerEvents = (player) => {
             color: 0x2b2d30,
             title: `${track.title}`,
             url: track.url,
-            description: `${track.duration != '0:00' ? `Track duration: **${track.duration}**`  : '🔴 LIVE STREAM'}`,
+            description: `${track.duration != '0:00' ? `Track duration: **${track.duration}**` : '🔴 LIVE STREAM'}`,
             image: {
                 url: track.thumbnail
             },
