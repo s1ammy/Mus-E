@@ -17,7 +17,10 @@ module.exports.registerPlayerEvents = (player) => {
                 url: track.thumbnail
             },
         };
-        queue.metadata.send({ embeds: [showTrack] });
+        queue.metadata.send({ embeds: [showTrack] })
+            .then(embedMessage => {
+                embedMessage.react('👍').then(() => embedMessage.react('👎'));
+            });
     });
 
     // player.on('trackAdd', (queue, track) => {
